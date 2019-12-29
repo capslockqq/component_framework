@@ -2,9 +2,9 @@
 #ifdef TARGET
 #include "../../../avr_code/operators.h"
 #endif
-#include "../../../application_code/components/Input.hpp"
-#include "../../../application_code/components/Output.hpp"
-#include "../../../application_code/components/Component.hpp"
+#include "../../../../component_framework/components/Input.hpp"
+#include "../../../../component_framework/components/Output.hpp"
+#include "../../../../component_framework/components/Component.hpp"
 template<class T, class implementation>
 class I_Serial_Communication : public Component{
 public:
