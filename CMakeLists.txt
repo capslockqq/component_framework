@@ -2,9 +2,8 @@
 # simple AVR library
 #####################################################################
 add_subdirectory(communication)
-add_subdirectory(control)
 file(GLOB application
-    "*.hh"
+    "*.hpp"
     "*.h"
     "*.cc"
     "*.cpp")

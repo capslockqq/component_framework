@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _SINGLETON_
+#define _SINGLETON_
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -32,3 +34,4 @@ private:
       number_of_outputs++;
    }
 };
+#endif

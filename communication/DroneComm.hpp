@@ -1,5 +1,5 @@
 #pragma once
-#include "../components/Component.hpp"
+#include "../../component_framework/components/Component.hpp"
 class Drone_Communication : public Component {
 public:
     Drone_Communication(const char * name, const char * id);

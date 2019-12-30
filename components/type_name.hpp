@@ -1,5 +1,6 @@
 #pragma once
-
+#ifndef TYPENAME
+#define TYPENAME
 #include <type_traits>
 #include <typeinfo>
 #ifndef _MSC_VER
@@ -34,3 +35,4 @@ type_name()
         r += "&&";
     return r;
 }
+#endif

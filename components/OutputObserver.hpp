@@ -1,3 +1,5 @@
+#ifndef _OUTPUTOBSERVER_
+#define _OUTPUTOBSERVER_
 #pragma once
 #ifdef PC
 #include <iostream>
@@ -43,7 +45,7 @@ inline void OutputObserver::Add_Output(int *compo, std::string type){
     component.push_back(std::tuple<int*, std::string>(compo, type));
 }
 #endif
-
+#endif
 
 
 

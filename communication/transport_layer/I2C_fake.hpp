@@ -1,6 +1,6 @@
 #pragma once
 #include "I_Serial_Communication.hpp"
-#include "../../components/Component.hpp"
+#include "../../../component_framework/components/Component.hpp"
 class I2C_fake : public I_Serial_Communication<int, I2C_fake> {
 public:
     I2C_fake(Component *parent, const char *name, const char *id);
