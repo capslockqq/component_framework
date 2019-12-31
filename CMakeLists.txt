@@ -12,6 +12,7 @@ if(BUILD_TYPE STREQUAL "TARGET")
     application_code
     ${application}
     )
+    add_avr_library(operators "operators.cpp")
 else()
     add_library (
         pc-application_code

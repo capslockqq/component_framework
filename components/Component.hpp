@@ -241,9 +241,11 @@ inline const char* Component::GetUniqueName()  {
     return _name_buffer;
 }
 
+#ifdef PC
 inline auto Component::get_all_unique_ids_as_map()  {
     return _unique_ids;
 }
+#endif
 
 inline ParameterWrite::ParameterWrite() {
    number_of_parameters = 0;
@@ -272,11 +274,13 @@ inline int ParameterWrite::get_number_of_param() {
    return number_of_parameters;
 }
 
+#ifdef PC
 inline vector<string> ParameterWrite::get_param_ids() {
    return param_ids;
 }
+#endif
 
-
+#ifdef PC
 inline int* ParameterWrite::get_float_param_ptr_by_id(string id_to_find) {
    for (int i = 0; i < float_index; i++) {
         Component *param_combo = (Component*)float_params[i];
@@ -287,6 +291,7 @@ inline int* ParameterWrite::get_float_param_ptr_by_id(string id_to_find) {
    }
    return 0;
 }
+
 inline int* ParameterWrite::get_double_param_ptr_by_id(string id_to_find) {
    for (int i = 0; i < double_index; i++) {
         Component *param_combo = (Component*)double_params[i];
@@ -317,4 +322,5 @@ inline int* ParameterWrite::get_bool_param_ptr_by_id(string id_to_find) {
    }
    return 0;
 }
+#endif
 #endif

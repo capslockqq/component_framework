@@ -1,10 +1,10 @@
 #pragma once
 #ifdef TARGET
-#include "../../../avr_code/operators.h"
+#include "../../operators.h"
 #endif
-#include "../../../../component_framework/components/Input.hpp"
-#include "../../../../component_framework/components/Output.hpp"
-#include "../../../../component_framework/components/Component.hpp"
+#include "../../components/Component.hpp"
+#include "../../components/Output.hpp"
+#include "../../components/Input.hpp"
 template<class T, class implementation>
 class I_Serial_Communication : public Component{
 public:

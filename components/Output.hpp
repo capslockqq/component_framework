@@ -112,7 +112,7 @@ void Output<T>::Update_Log() {
 		output_file << ";\n";
 	}
 }
-
+#endif
 template <class T>
 class Input : public Component
 {
@@ -153,4 +153,3 @@ template <class T>
 void Input<T>::SetValue(T value) {
 	*_value = value;
 }
-#endif
